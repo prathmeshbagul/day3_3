@@ -200,3 +200,134 @@ Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/prathmeshbagul/day3_3.git
    b6b6816..1478410  master -> master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m '1sthalf'
+[master 706c411] 1sthalf
+ 1 file changed, 202 insertions(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+To https://github.com/prathmeshbagul/day3_3.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/prathmeshbagul/day3_3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/prathmeshbagul/day3_3.git'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+To https://github.com/prathmeshbagul/day3_3.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/prathmeshbagul/day3_3.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git fetch origin master
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.22 KiB | 29.00 KiB/s, done.
+From https://github.com/prathmeshbagul/day3_3
+ * branch            master     -> FETCH_HEAD
+   1478410..fea94b6  master     -> origin/master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+To https://github.com/prathmeshbagul/day3_3.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/prathmeshbagul/day3_3.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git merge origin master
+Already up to date.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git remote add origin https://github.com/prathmeshbagul/day3_3.git
+error: remote origin already exists.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push --force origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.23 KiB | 1.23 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+ + fea94b6...706c411 master -> master (forced update)
