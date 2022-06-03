@@ -1,0 +1,202 @@
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git origin -M main
+git: 'origin' is not a git command. See 'git --help'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git branch -M main
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ touch file2.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ touch file2.docs
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git commit -m 'Trial in main'
+[main 3f158b3] Trial in main
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.docs
+ create mode 100644 file2.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 252 bytes | 252.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   de9f47c..3f158b3  main -> main
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ touch file2.sql
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git commit -m 'trial in main with full push'
+[main 9f443e9] trial in main with full push
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file2.sql
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 248 bytes | 248.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   3f158b3..9f443e9  main -> main
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (main)
+$ git branch -M master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file3.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file3.docs
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m "trial with nondefault master'
+>
+> ^C
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m 'trial with nondefault master'
+[master bb47068] trial with nondefault master
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file3.docs
+ create mode 100644 file3.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 262 bytes | 262.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   4bd2d7b..bb47068  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file4.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touchfile5.docs
+bash: touchfile5.docs: command not found
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file4.docs
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m 'made master branch default'
+[master b6b6816] made master branch default
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file4.docs
+ create mode 100644 file4.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 260 bytes | 260.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   bb47068..b6b6816  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git touch file5.txt
+git: 'touch' is not a git command. See 'git --help'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add .
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m 'push'
+[master 1478410] push
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 file5.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/prathmeshbagul/day3_3.git'
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 235 bytes | 235.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   b6b6816..1478410  master -> master
