@@ -1,2 +1,178 @@
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+?? file6.docx
+?? file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status --short
+?? file6.docx
+?? file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.txt
+?? file6.docx
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add file6.docx
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.docx
+A  file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ nano file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.docx
+AM file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ touch file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file6.docx
+        new file:   file6.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file6.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file7.txt
+
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.docx
+AM file6.txt
+?? file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ nano file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.docx
+AM file6.txt
+?? file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add file7.txt
+warning: LF will be replaced by CRLF in file7.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+A  file6.docx
+AM file6.txt
+A  file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m 'monday1stcommit'
+[master d9dbc14] monday1stcommit
+ 3 files changed, 2 insertions(+)
+ create mode 100644 file6.docx
+ create mode 100644 file6.txt
+ create mode 100644 file7.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+ M file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 306 bytes | 306.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   72c0222..d9dbc14  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+ M file6.txt
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git add .
+warning: LF will be replaced by CRLF in file6.txt.
+The file will have its original line endings in your working directory
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git commit -m 'modified file6 commited'
+[master 54ab3f5] modified file6 commited
+ 1 file changed, 1 insertion(+)
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:main
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/prathmeshbagul/day3_3.git
+   d9dbc14..54ab3f5  master -> master
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status -s
+
+Bagu_pra@KLIN0078 MINGW64 ~/Desktop/day3_3/day3_3 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
 hey monday
 
